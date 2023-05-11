@@ -1,4 +1,4 @@
-if RUBY_VERSION.to_f >= 3.0 && !RUBY_PLATFORM[/java/i]
+if RUBY_VERSION.to_f >= 3.0 && RUBY_VERSION.to_f < 3.1 && !RUBY_PLATFORM[/java/i]
   require 'sorted_set'
 else
   require 'set'
